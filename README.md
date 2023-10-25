@@ -1,6 +1,6 @@
 # 백준 [(taerim0)](https://www.acmicpc.net/user/taerim0)
 
-.. using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHub)" (2023.10.23~)
+using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHub)" (2023.10.23~)
 
 ## timeline
 ### 2023
