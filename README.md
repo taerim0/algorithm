@@ -9,4 +9,4 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 - 2023.07.01. | UCPC 예선탈
 - 2023.09.27. | solved.ac G2
 - 2023.10.20. | ICPC 예선탈
-- 2023.10.16. | solved.ac G1
+- 2023.10.26. | solved.ac G1
