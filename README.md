@@ -2,6 +2,16 @@
 
 using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHub)" (2023.10.23~)
 
+## 알고리즘 진도
+
+- Graph
+- - dfs
+  - bfs
+  - 0-1 bfs
+  - dijkstra
+- dynamic programming
+- - convex hull trick (ing)
+
 ## timeline
 ### 2023
 - 2023.04.02. | 알고리즘 공부 시작 (solved.ac B5)
