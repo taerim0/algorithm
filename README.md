@@ -12,6 +12,7 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 - Data Structure : Stack, Queue, Priority_Queue, Deque
 - Sort
 - Prefix Sum
+- Two Pointer
 - Divide and Conquer : Binary Search
 
 #### 배우고 있는 알고리즘
