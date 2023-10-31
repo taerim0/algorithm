@@ -8,7 +8,7 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 
 - Brute Force
 - Dynamic Programming : LCS
-- Graph : DFS, BFS, 0-1 BFS, Dijkstra
+- Graph : DFS, BFS, 0-1 BFS, Dijkstra, MST
 - Data Structue : Stack, Queue, Priority_Queue, Deque
 - Sort
 - Prefix Sum
