@@ -8,7 +8,7 @@ int q;
 char a;
 int l, r;
 
-int apbsum[26][200000];
+int apbsum[26][200001];
 
 int main()
 {
