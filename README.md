@@ -4,15 +4,20 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 
 ## 알고리즘 진도
 
-- Graph
-  
-  - DFS
-  - BFS
-  - 0-1 BFS
-  - Dijkstra
-- Dynamic Programming
-  
-  - Convex Hull Trick (ing)
+#### 응용이 가능한 알고리즘
+
+- Brute Force
+- Dynamic Programming : LCS
+- Graph : DFS, BFS, 0-1 BFS, Dijkstra
+- Data Structue : Stack, Queue, Priority_Queue, Deque
+- Sort
+- Prefix Sum
+- Divide and Conquer : Binary Search
+
+#### 배우고 있는 알고리즘
+
+ - Dynamic Programming : Convex Hull Trcik, Napsack
+ - Divide and Conquer : FFT
 
 ## timeline
 ### 2023
