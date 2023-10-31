@@ -5,12 +5,14 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 ## 알고리즘 진도
 
 - Graph
-  - dfs
-  - bfs
-  - 0-1 bfs
-  - dijkstra
-- dynamic programming
-  - convex hull trick (ing)
+  
+  - DFS
+  - BFS
+  - 0-1 BFS
+  - Dijkstra
+- Dynamic Programming
+  
+  - Convex Hull Trick (ing)
 
 ## timeline
 ### 2023
