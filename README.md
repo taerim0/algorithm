@@ -17,7 +17,7 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 
 #### 배우고 있는 알고리즘
 
- - Dynamic Programming : Convex Hull Trcik, Napsack
+ - Dynamic Programming : Convex Hull Trick, Napsack
  - Divide and Conquer : FFT
 
 ## timeline
