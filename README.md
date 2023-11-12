@@ -29,3 +29,5 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 - 2023.10.20. | ICPC 예선탈
 - 2023.10.26. | solved.ac G1
 - 2023.11.06. | solved.ac P5
+- 2023.11.11. | Arena : SASA Programming Contest 2023 Open Contest Div. 1 47th
+- 2023.11.12. | Arena : 2023 Sogang Programming Contest Open — Master Division (Div. 2) 21th
