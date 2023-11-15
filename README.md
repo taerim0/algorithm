@@ -13,12 +13,12 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 - Sort
 - Prefix Sum
 - Two Pointer
-- Divide and Conquer : Binary Search
+- Divide and Conquer : Binary Search, Exponetation
 
 #### 배우고 있는 알고리즘
 
  - Dynamic Programming : Convex Hull Trick, Napsack
- - Divide and Conquer : FFT, Power
+ - Divide and Conquer : FFT
 
 ## timeline
 ### 2023
