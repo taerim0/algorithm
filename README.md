@@ -7,7 +7,7 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 #### 응용이 가능한 알고리즘
 
 - Brute Force
-- Dynamic Programming : LCS
+- Dynamic Programming : LCS, LIS
 - Graph : DFS, BFS, 0-1 BFS, Dijkstra, MST
 - Data Structure : Stack, Queue, Priority_Queue, Deque
 - Sort
