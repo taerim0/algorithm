@@ -7,9 +7,9 @@ using namespace std;
 
 int N, M, Q;
 
-int fish[2001][2001];
-ll power[2001][2001];
-ll dp[2001][2001];
+int fish;
+int power[2001][2001];
+int dp[2001][2001];
 
 int main()
 {
@@ -23,9 +23,9 @@ int main()
 	{
 		for (int j = 1; j <= M; j++)
 		{
-			cin >> fish[i][j];
+			cin >> fish;
 
-			power[i][j] = power[i - 1][j] + fish[i][j];
+			power[i][j] = power[i - 1][j] + fish;
 			dp[i][j] = power[i][j] + dp[i - 1][j - 1];
 		}
 	}
