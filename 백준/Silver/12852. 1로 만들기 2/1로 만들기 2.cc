@@ -7,50 +7,7 @@ using namespace std;
 
 int N;
 int dp[1000001];
-
-void bfs()
-{
-	deque<pair<pair<int, int>, vector<int>>> q;
-	bool end = false;
-	q.push_front({ { N, 0 }, { N } });
-
-	while (q.size())
-	{
-		auto [a, v] = q.front();
-		auto [n, t] = a;
-		q.pop_front();
-
-		if (n == 1)
-		{
-			if (t == dp[N])
-			{
-				for (int i = 0; i < v.size(); i++)
-					cout << v[i] << " ";
-				end = true;
-			}
-			if (end)
-				break;
-			continue;
-		}
-
-		v.push_back(n - 1);
-		q.push_back({ { n - 1, t + 1 }, v });
-		v.pop_back();
-
-		if (n % 2 == 0)
-		{
-			v.push_back(n / 2);
-			q.push_front({ { n / 2, t + 1 }, v });
-			v.pop_back();
-		}
-
-		if (n % 3 == 0)
-		{
-			v.push_back(n / 3);
-			q.push_front({ { n / 3, t + 1 }, v });
-		}
-	}
-}
+int adj[1000001];
 
 int main()
 {
@@ -63,14 +20,24 @@ int main()
 	for (int i = 2; i <= N; i++)
 	{
 		dp[i] = dp[i - 1] + 1;
+		adj[i] = i - 1;
 
 		if (i % 2 == 0)
-			dp[i] = min(dp[i], dp[i / 2] + 1);
+			if (dp[i / 2] + 1 < dp[i])
+				dp[i] = dp[i / 2] + 1, adj[i] = i / 2;
 		if (i % 3 == 0)
-			dp[i] = min(dp[i], dp[i / 3] + 1);
+			if (dp[i / 3] + 1 < dp[i])
+				dp[i] = dp[i / 3] + 1, adj[i] = i / 3;
 	}
 
 	cout << dp[N] << "\n";
 
-	bfs();
+	int temp = N;
+
+	while (temp != 1)
+	{
+		cout << temp << " ";
+		temp = adj[temp];
+	}
+	cout << 1;
 }
