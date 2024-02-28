@@ -34,3 +34,8 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
   - S+, 47th, 4/8 solve
 - 2023.11.12. | Arena : 2023 Sogang Programming Contest Open — Master Division (Div. 2)
   - S+, 21th, 5/8 solve
+- 2023.11.26. | Arena : solved.ac Grand Arena #3 — Division 2
+  - S+, 53th, 4/7 solve
+- 2023.12.03. | Arena : The 10th Hanyang University Programming Contest (HCPC) Open Contest — Beginner Division (Div. 2)
+  - S, 53th, 5/10 solve
+
