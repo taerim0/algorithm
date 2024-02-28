@@ -38,4 +38,6 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
   - S+, 53th, 4/7 solve
 - 2023.12.03. | Arena : The 10th Hanyang University Programming Contest (HCPC) Open Contest — Beginner Division (Div. 2)
   - S, 53th, 5/10 solve
+- 2023.12.20. | solved.ac P4
+
 
