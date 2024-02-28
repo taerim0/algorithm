@@ -23,7 +23,7 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 ## timeline
 ### 2023
 - 2023.04.02. | 알고리즘 공부 시작 (solved.ac B5)
-- 2023.05.27. | 2023 Ajou Programming Contest Div. 2
+- 2023.05.27. | 2023 Ajou Programming Contest Div. 2 (교내 대회, 오프라인)
   - 1th, 5/10 solve
 - 2023.07.01. | UCPC 예선탈
 - 2023.09.27. | solved.ac G2
