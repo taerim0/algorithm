@@ -2,24 +2,6 @@
 
 using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHub)" (2023.10.23~)
 
-## 알고리즘 진도
-
-#### 응용이 가능한 알고리즘
-
-- Brute Force
-- Dynamic Programming : LCS, LIS
-- Graph : DFS, BFS, 0-1 BFS, Dijkstra, MST
-- Data Structure : Stack, Queue, Priority_Queue, Deque
-- Sort
-- Prefix Sum
-- Two Pointer
-- Divide and Conquer : Binary Search, Exponetation
-
-#### 배우고 있는 알고리즘
-
- - Dynamic Programming : Convex Hull Trick, Napsack
- - Divide and Conquer : FFT
-
 ## timeline
 ### 2023
 - 2023.04.02. | 알고리즘 공부 시작 (solved.ac B5)
@@ -39,5 +21,5 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 - 2023.12.03. | Arena : The 10th Hanyang University Programming Contest (HCPC) Open Contest — Beginner Division (Div. 2)
   - S, 53th, 5/10 solve
 - 2023.12.20. | solved.ac P4
-
+- 다른 공부에 시간 쓰는 중
 
