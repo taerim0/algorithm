@@ -21,5 +21,6 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
 - 2023.12.03. | Arena : The 10th Hanyang University Programming Contest (HCPC) Open Contest — Beginner Division (Div. 2)
   - S, 53th, 5/10 solve
 - 2023.12.20. | solved.ac P4
+### 2024
 - 다른 공부에 시간 쓰는 중
 
