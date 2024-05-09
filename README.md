@@ -22,5 +22,5 @@ using chrome extension "[baekjoon hub](https://github.com/BaekjoonHub/BaekjoonHu
   - S, 53th, 5/10 solve
 - 2023.12.20. | solved.ac P4
 ### 2024
-- 다른 공부에 시간 쓰는 중
+- 인프라 공부 및 공군 입대
 
