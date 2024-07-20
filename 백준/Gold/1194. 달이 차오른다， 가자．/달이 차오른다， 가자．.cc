@@ -18,21 +18,17 @@ int dist[64][50][50];
 int dy[] = { 0, 0, 1, -1 };
 int dx[] = { 1, -1, 0, 0 };
 
-queue<data> keys;
 pii start;
 
 int ans = -1;
 
 void find_distance(data ini) {
-    priority_queue<data> pq;
-    pq.push(ini);
-    dist[ini.second.first][ini.second.second.first][ini.second.second.second] = ini.first;
-    if (map[ini.second.second.first][ini.second.second.second] == '0')
-        dist[ini.second.first][ini.second.second.first][ini.second.second.second] = -1;
+    queue<data> q;
+    q.push(ini);
 
-    while (!pq.empty()) {
-        data dat = pq.top();
-        pq.pop();
+    while (!q.empty()) {
+        data dat = q.front();
+        q.pop();
         auto [dis, nd] = dat;
         auto [key, pos] = nd;
         auto [y, x] = pos;
@@ -57,17 +53,16 @@ void find_distance(data ini) {
 
             if (map[dn][dm] >= 'a' && map[dn][dm] <= 'f') {
                 if ((key >> (map[dn][dm] - 'a')) & 1u)
-                    pq.push({ dis + 1, { key, { dn, dm } } });
+                    q.push({ dis + 1, { key, { dn, dm } } });
                 else
-                    keys.push({ dis + 1, { key | (1u << (map[dn][dm] - 'a')), { dn, dm } } });
+                    q.push({ dis + 1, { key | (1u << (map[dn][dm] - 'a')), { dn, dm } } });
             }
             else
-                pq.push({ dis + 1, { key, { dn, dm } } });
+                q.push({ dis + 1, { key, { dn, dm } } });
 
             if (map[dn][dm] == '1') {
-                if (ans == -1)
-                    ans = dis + 1;
-                ans = min(ans, dis + 1);
+                ans = dis + 1;
+                return;
             }
         }
     }
@@ -83,17 +78,12 @@ int main()
 
             if (map[i][j] == '0') {
                 start = { i, j };
+                dist[0][i][j] = -1;
             }
         }
     }
 
     find_distance({ 0, { 0, start } });
-
-    while (!keys.empty()) {
-        data key = keys.front();
-        find_distance(key);
-        keys.pop();
-    }
 
     cout << ans;
 
