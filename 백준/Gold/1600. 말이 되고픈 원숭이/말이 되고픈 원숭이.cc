@@ -1,49 +1,48 @@
 #include <iostream>
+#include <algorithm>
+#include <vector>
 #include <queue>
-
-#define pii pair<int, int>
+#include <deque>
 
 using namespace std;
 
-int K, W, H;
+#define ll long long
+#define pii pair<int, int>
+#define pll pair<ll, ll>
 
+struct node
+{
+    pii pos;
+    pii data;
+};
+
+int K, W, H;
 int ans = -1;
 
+int dy[] = { -1, -2, -2, -1, 1, 2, 2, 1, /* 8~ */ 0, 0, 1, -1 };
+int dx[] = { -2, -1, 1, 2, 2, 1, -1, -2, /* 8~ */ 1, -1, 0, 0 };
+
 int map[200][200];
-int check[200][200];
+int chk[200][200];
 
-int dy[] = { 0, 0, 1, -1 };
-int dx[] = { 1, -1, 0, 0 };
-
-int jy[] = { -1, -2, -2, -1, 1, 2, 2, 1 };
-int jx[] = { -2, -1, 1, 2, 2, 1, -1, -2 };
+queue<node> q;
 
 void bfs()
 {
-	queue<pair<pii, pii>> q;
+    q.push({ { 0, 0 }, { 0, K } });
+    chk[0][0] = K + 1;
 
-	q.push({ { 0, K }, { 0, 0 } });
-	check[0][0] = K + 1;
-
-	if (H == 1 && W == 1)
-	{
-		ans = 0;
-		return;
-	}
-	
-	while (q.size())
-	{
-		auto [data, pos] = q.front();
-		auto [cost, k] = data;
-		auto [y, x] = pos;
-		q.pop();
+    while (q.size()) {
+        auto [y, x] = q.front().pos;
+        auto [cost, k] = q.front().data;
+        q.pop();
 
 		if (k)
 		{
 			for (int i = 0; i < 8; i++)
 			{
-				int dm = y + jy[i];
-				int dn = x + jx[i];
+				int dm = y + dy[i];
+				int dn = x + dx[i];
 
 				if (dm >= H || dm < 0 || dn >= W || dn < 0)
 					continue;
@@ -51,11 +50,11 @@ void bfs()
 				if (map[dm][dn] == 1)
 					continue;
 
-				if (check[dm][dn] >= k)
+				if (chk[dm][dn] >= k)
 					continue;
 
-				check[dm][dn] = k;
-				q.push({ { cost - 1, k - 1 }, { dm, dn } });
+				chk[dm][dn] = k;
+				q.push({ { dm, dn }, { cost - 1, k - 1 } });
 
 				if (dm == H - 1 && dn == W - 1)
 				{
@@ -65,7 +64,7 @@ void bfs()
 			}
 		}
 
-		for (int i = 0; i < 4; i++)
+		for (int i = 8; i < 12; i++)
 		{
 			int dm = y + dy[i];
 			int dn = x + dx[i];
@@ -76,11 +75,11 @@ void bfs()
 			if (map[dm][dn] == 1)
 				continue;
 
-			if (check[dm][dn] >= k + 1)
+			if (chk[dm][dn] >= k + 1)
 				continue;
 
-			check[dm][dn] = k + 1;
-			q.push({ { cost - 1, k }, { dm, dn } });
+			chk[dm][dn] = k + 1;
+			q.push({ { dm, dn }, { cost - 1, k } });
 
 			if (dm == H - 1 && dn == W - 1)
 			{
@@ -88,27 +87,27 @@ void bfs()
 				return;
 			}
 		}
-	}
+    }
 }
-
 
 int main()
 {
-	ios_base::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
 
-	cin >> K >> W >> H;
+    cin >> K >> W >> H;
 
-	for (int i = 0; i < H; i++)
-	{
-		for (int j = 0; j < W; j++)
-		{
-			cin >> map[i][j];
-		}
-	}
+    for (int i = 0; i < H; i++)
+        for (int j = 0; j < W; j++)
+            cin >> map[i][j];
 
-	bfs();
+    if (H == 1 && W == 1) {
+        cout << 0;
+        return 0;
+    }
 
-	cout << ans;
+    bfs();
+
+    cout << ans;
 }
