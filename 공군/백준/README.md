@@ -2,14 +2,6 @@
 
 - 2026.06.08 전역 예정
 
-- 알고리즘들
-
-```
-너비 우선 탐색
-이분 탐색
-
-```
-
 - 문제 타임라인 - 골드 이상만
 
 <details>
@@ -126,5 +118,172 @@
     <th scope="col">알고리즘 분류</td>
     <th scope="col">한줄평</td>
   </tr>
+  <tr>
+    <td>G4</td>
+    <td>23325. 마법천자문</td>
+    <td>25. 01. 11.</td>
+    <td>DP</td>
+    <td>한 번에 풀긴 했는데 원래 난이도보다 어렵게 푼 느낌..</td>
+  </tr>
+  <tr>
+    <td>G4</td>
+    <td>32983. 동굴</td>
+    <td>25. 01. 20.</td>
+    <td>BFS</td>
+    <td>젤다의 전설</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>2042. 구간 합 구하기</td>
+    <td>25. 01. 31.</td>
+    <td>segment tree</td>
+    <td>휴머니스트 wiki 게시판에서 세그트리 배우고 써먹은 문제</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>11505. 구간 곱 구하기</td>
+    <td>25. 01. 31.</td>
+    <td>segment tree</td>
+    <td>위 문제를 곱셈 연산으로 바꾼 문제. 쿼리 출력 방법에 주의</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>2357. 최솟값과 최댓값</td>
+    <td>25. 01. 31.</td>
+    <td>segment tree</td>
+    <td>세그먼트 트리를 pair 자료형으로 응용. 업데이트 없는 세그트리</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>10868. 최솟값</td>
+    <td>25. 01. 31.</td>
+    <td>segment tree</td>
+    <td>위 문제의 더 쉬운 버전! int 자료형으로 해결</td>
+  </tr>
+</table>
+</details>
+
+<details>
+<summary>문제 타임라인 25년 2월</summary>      
+<table>
+  <tr>
+    <th scope="col">난이도</td>
+    <th scope="col">문제번호 및 제목</td>
+    <th scope="col">날짜</td>
+    <th scope="col">알고리즘 분류</td>
+    <th scope="col">한줄평</td>
+  </tr>
+  <tr>
+    <td>P5</td>
+    <td>1725. 히스토그램</td>
+    <td>25. 02. 01.</td>
+    <td>segment tree, stack, divide and conquer</td>
+    <td>이전에 분할정복으로 풀었던 문제인데 세그트리로 다시 풀어봤다</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>2268. 수들의 합 7</td>
+    <td>25. 02. 01.</td>
+    <td>segment tree</td>
+    <td>세그트리 기본문제. 지문에 주의..</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>1275. 커피숍2</td>
+    <td>25. 02. 17.</td>
+    <td>segment tree</td>
+    <td>공부 너무 안했다..... 복기 겸 세그트리 기본문제</td>
+  </tr>
+  <tr>
+    <td>P5</td>
+    <td>1321. 군인</td>
+    <td>25. 02. 17.</td>
+    <td>segment tree</td>
+    <td>세그먼트 트리 쿼리 변형 응용. 누적합에서 타겟 값보다 큰 값들 중 최솟값의 위치를 찾아내면 됨</td>
+  </tr>
+  <tr>
+    <td>G3</td>
+    <td>28099. 이상한 배열</td>
+    <td>25. 02. 27.</td>
+    <td>segment tree</td>
+    <td>최댓값 세그트리</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>18436. 수열과 쿼리 37</td>
+    <td>25. 02. 27.</td>
+    <td>segment tree</td>
+    <td>pair 사용해서 짝수, 홀수 카운팅 세그트리</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>14438. 수열과 쿼리 17</td>
+    <td>25. 02. 27.</td>
+    <td>segment tree</td>
+    <td>최솟값 세그트리</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>12837. 가계부(Hard)</td>
+    <td>25. 02. 27.</td>
+    <td>segment tree</td>
+    <td>init 없는 8byte 세그트리</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>14428. 수열과 쿼리 16</td>
+    <td>25. 02. 28.</td>
+    <td>segment tree</td>
+    <td>pair 사용해서 최솟값의 인덱스 세그트리</td>
+  </tr>
+  <tr>
+    <td>G1</td>
+    <td>14427. 수열과 쿼리 15</td>
+    <td>25. 02. 28.</td>
+    <td>segment tree</td>
+    <td>위 문제와 큰 차이 없음. 엄...</td>
+  </tr>
+  <tr>
+    <td>P5</td>
+    <td>2104. 부분 배열 고르기</td>
+    <td>25. 02. 28.</td>
+    <td>segment tree, stack, divide and conquer</td>
+    <td>히스토그램류 문제인데 세그트리로 풀어보기</td>
+  </tr>
+  <tr>
+    <td>G4</td>
+    <td>11559. Puyo Puyo</td>
+    <td>25. 02. 28.</td>
+    <td>BFS, simulation</td>
+    <td></td>
+  </tr>
+</table>
+</details>
+
+<details>
+<summary>문제 타임라인 25년 3월</summary>      
+<table>
+  <tr>
+    <th scope="col">난이도</td>
+    <th scope="col">문제번호 및 제목</td>
+    <th scope="col">날짜</td>
+    <th scope="col">알고리즘 분류</td>
+    <th scope="col">한줄평</td>
+  </tr>
+  <tr>
+    <td>P5</td>
+    <td>5676. 음주 코딩</td>
+    <td>25. 03. 03.</td>
+    <td>segment tree</td>
+    <td>EOF 입력 곱셈 세그먼트 트리 << 실수할 거리 많음..</td>
+  </tr>
+  <tr>
+    <td>G4</td>
+    <td>14226. 이모티콘</td>
+    <td>25. 03. 03.</td>
+    <td>BFS</td>
+    <td>2차원 check 배열 사용하는 아이디어가 재밌음.</td>
+  </tr>
+      
 </table>
 </details>

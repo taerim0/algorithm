@@ -1,1 +1,1 @@
-git add.
+run = "g++ ./공군/Leita/leita.cpp -o replit && ./replit"
